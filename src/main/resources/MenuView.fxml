@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="190.0"
+	prefWidth="315.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuViewController">
+	<top>
+		<MenuBar BorderPane.alignment="CENTER">
+			<menus>
+				<Menu mnemonicParsing="false" text="File">
+					<items>
+						<MenuItem fx:id="miCreate" mnemonicParsing="false" text="Create" />
+						<MenuItem fx:id="miRead" mnemonicParsing="false" text="Read " />
+						<MenuItem fx:id="miSave" mnemonicParsing="false" text="Save" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top>
+	<center>
+		<Pane prefHeight="154.0" prefWidth="315.0" BorderPane.alignment="CENTER">
+			<children>
+				<Button fx:id="btnAddView" mnemonicParsing="false" onAction="#clickAddView"
+					prefHeight="55.0" prefWidth="315.0" text="Add Record" />
+				<Button fx:id="btnEditDeleteView" layoutY="55.0"
+					mnemonicParsing="false" onAction="#clickEditDeleteView" prefHeight="55.0"
+					prefWidth="315.0" text="Edit/Delete Record" />
+				<Button fx:id="btnShowAllRecordAndSearchView" layoutY="110.0"
+					mnemonicParsing="false" onAction="#clickShow" prefHeight="55.0"
+					prefWidth="315.0" text="Show ALL Record / Search" />
+			</children>
+		</Pane>
+	</center>
+</BorderPane>
